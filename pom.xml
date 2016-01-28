@@ -28,7 +28,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>dependency/</classpathPrefix>
                         </manifest>
-                        <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+                        <manifestFile>src/main/resources/META-INF/spring/MANIFEST.MF</manifestFile>
                     </archive>
                 </configuration>
             </plugin>
