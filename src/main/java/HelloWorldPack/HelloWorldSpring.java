@@ -13,5 +13,7 @@ public class HelloWorldSpring {
         mr.render();
         MessageRender mrNew = ctx.getBean("renderNew", MessageRender.class);
         mrNew.render();
+        MessageRender mrSuper = ctx.getBean("renderSuper",MessageRender.class);
+        mrSuper.render();
     }
 }
