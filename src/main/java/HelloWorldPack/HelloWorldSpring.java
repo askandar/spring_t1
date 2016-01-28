@@ -11,5 +11,7 @@ public class HelloWorldSpring {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("META-INF/spring/app-context.xml");
         MessageRender mr = ctx.getBean("renderer",MessageRender.class);
         mr.render();
+        MessageRender mrNew = ctx.getBean("renderNew", MessageRender.class);
+        mrNew.render();
     }
 }

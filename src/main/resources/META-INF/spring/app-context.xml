@@ -9,4 +9,5 @@
 
     <bean id="renderer" class="HelloWorldPack.StandartOutMessageRender"
           p:messageProvider-ref="provider"/>
+    <bean id="renderNew" class="HelloWorldPack.NewOutMessageRender" p:messageProvider-ref="provider" />
 </beans>
