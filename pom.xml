@@ -15,4 +15,24 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>HelloWorldPack.HelloWorldSpring</mainClass>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>dependency/</classpathPrefix>
+                        </manifest>
+                        <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
 </project>
